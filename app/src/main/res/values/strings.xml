@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">WeatherForecast</string>
+    <string name="open_location_settings">open location settings</string>
+    <string name="gps_network_not_enabled">Please enable/switch on GPS in the settings</string>
+    <string name="Cancel">Cancel</string>
+    <string name="name">Name:</string>
+    <string name="region">region:</string>
+    <string name="time">time:</string>
+    <string name="celsius">Celsius:</string>
+    <string name="fahrenheit">Fahrenheit:</string>
+    <string name="condition">condition:</string>
+
+    <string name="date">Date:</string>
+    <string name="maxCelsius">MaxCelsius:</string>
+    <string name="minCelsius">MinCelsius:</string>
+    <string name="maxFeh">MaxFeh:</string>
+    <string name="minFeh">MinFeh:</string>
+    <string name="avg_humidity">Avg humidity:</string>
+
+</resources>

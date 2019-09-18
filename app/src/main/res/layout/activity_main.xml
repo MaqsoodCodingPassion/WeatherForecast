@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/headerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Location"/>
+
+        <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/headerLabel"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:text="Name : "/>
+
+        <TextView
+                android:id="@+id/region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/name"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:text="Region : "/>
+
+        <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/region"
+                android:textSize="12sp"
+                android:text="Time : "/>
+
+        <TextView
+                android:id="@+id/currentWeatherLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/time"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Current Weather"/>
+
+        <TextView
+                android:id="@+id/celsius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/currentWeatherLabel"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:text="Celsius : "/>
+
+        <TextView
+                android:id="@+id/fahrenheit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/celsius"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:text="Fahrenheit: "/>
+
+        <TextView
+                android:id="@+id/condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/fahrenheit"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:text="Condition: "/>
+
+        <ImageView
+                android:id="@+id/currentWeatherImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/currentWeatherLabel"
+                android:textSize="12sp"
+                android:text="Fahrenheit: "/>
+
+
+        <TextView
+                android:id="@+id/futureWeather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/condition"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Future Weather"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/weatherRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/futureWeather">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

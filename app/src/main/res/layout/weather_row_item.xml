@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   card_view:cardCornerRadius="4dp"
+                                   card_view:cardElevation="2dp"
+                                   card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+        <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Date :"/>
+
+        <TextView
+                android:id="@+id/maxCelsius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/date"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:text="Max Temp-Celsius : "/>
+
+        <TextView
+                android:id="@+id/minCelsius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/maxCelsius"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:text="Min Temp-Celsius : "/>
+
+        <TextView
+                android:id="@+id/maxFeh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/minCelsius"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:text="Max Temp-Fahrenheit : "/>
+
+        <TextView
+                android:id="@+id/minFeh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/maxFeh"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:text="Min Temp-Fahrenheit : "/>
+
+        <TextView
+                android:id="@+id/condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/minFeh"
+                android:textSize="12sp"
+                android:text="Condition : "/>
+
+        <TextView
+                android:id="@+id/humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/condition"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:text="Humidity : "/>
+
+        <ImageView
+                android:id="@+id/weatherImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:text="Avg Humidity : "/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
